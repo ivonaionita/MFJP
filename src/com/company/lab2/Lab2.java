@@ -1,7 +1,10 @@
 package com.company.lab2;
 
 public class Lab2 {
+
     public static void main(String[] args) {
+
+
 
     }
 
@@ -61,5 +64,15 @@ public class Lab2 {
 
         return new float[]{speed, speed2, speed3};
 
-    }
+        }
+
+        static int abcd (int y){
+         y= --y;
+         int x;
+         x=y;
+        return(x);
+        }
 }
+
+
+
