@@ -7,6 +7,11 @@ public class Lab2 {
 
 
     }
+    static int opmain1(int no1,int no2,int no3){
+        int result;
+        result=no1+no2*no3;
+        return(result);
+    }
 
 
     static int sum(int no1, int no2){
