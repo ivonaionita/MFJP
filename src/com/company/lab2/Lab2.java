@@ -1,8 +1,5 @@
 package com.company.lab2;
 
-import java.sql.SQLOutput;
-import java.util.concurrent.Callable;
-
 public class Lab2 {
 
     public static void main(String[] args) {
@@ -38,7 +35,6 @@ public class Lab2 {
         System.out.println(calcOp10.convertor(23));
 
         LogicalOp compareNumbers1 = new LogicalOp();
-        // System.out.println(compareNumbers1.checkBiggerNumber(5,4));
         int biggest = compareNumbers1.checkBiggerNumber(3, 4);
         System.out.println("the bigger number is" + biggest);
 
