@@ -51,8 +51,7 @@ public class Lab2 {
         System.out.println(rVerifyNumber.verificare(4));
 
         LogicalOp rSwitchCase = new LogicalOp();
-        ;
-        System.out.println(rSwitchCase.switchCase1(6));
+        System.out.println(rSwitchCase.switchCase1(1));
 
         LogicalOp rIsNumberEven = new LogicalOp();
         System.out.println(rIsNumberEven.isNumberEven(5));

@@ -54,15 +54,15 @@ public class LogicalOp {
     public String switchCase1(int number) {
         switch (number) {
             case 1:
-                System.out.println("The number is 1");
+                System.out.println("The number is 1");break;
             case 2:
-                System.out.println("The number is 2");
+                System.out.println("The number is 2");break;
             case 3:
-                System.out.println("The number is 3");
+                System.out.println("The number is 3");break;
             default:
                 System.out.println("not 1, 2 or 3");
         }
-        return "";
+            return "";
     }
 
     public boolean isNumberEven(int x) {
