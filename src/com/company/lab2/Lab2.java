@@ -1,37 +1,77 @@
 package com.company.lab2;
 
+import java.sql.SQLOutput;
+import java.util.concurrent.Callable;
+
 public class Lab2 {
 
     public static void main(String[] args) {
 
+        Calculator calcOp1 = new Calculator();
+        System.out.println(calcOp1.opMain1(1, 2, 4));
+
+        Calculator calcOp2 = new Calculator();
+        System.out.println(calcOp2.sum(2, 3));
+
+        Calculator calcOp3 = new Calculator();
+        System.out.println(calcOp3.dec(4, 5));
+
+        Calculator calcOp4 = new Calculator();
+        System.out.println(calcOp4.divide(4, 5));
+
+        Calculator calcOp5 = new Calculator();
+        System.out.println(calcOp5.mult(2, 3));
+
+        Calculator calcOp6 = new Calculator();
+        System.out.println(calcOp6.multiple(2, 4, 5));
+
+        Calculator calcOp7 = new Calculator();
+        System.out.println(calcOp7.arithmetic(3, 5, 7));
+
+        Calculator calcOp8 = new Calculator();
+        System.out.println(calcOp8.rest(3, 2));
+
+        Calculator calcOp9 = new Calculator();
+        System.out.println(calcOp9.temperature(34));
+
+        Calculator calcOp10 = new Calculator();
+        System.out.println(calcOp10.convertor(23));
+
+        LogicalOp compareNumbers1 = new LogicalOp();
+        // System.out.println(compareNumbers1.checkBiggerNumber(5,4));
+        int biggest = compareNumbers1.checkBiggerNumber(3, 4);
+        System.out.println("the bigger number is" + biggest);
+
+        LogicalOp compareStrings1 = new LogicalOp();
+        System.out.println(compareStrings1.compareString("kjaskajsa"));
+
+        LogicalOp veriftTextAndNumber1 = new LogicalOp();
+        System.out.println(veriftTextAndNumber1.verifyTextAndNumber(2, "FastTracukIT"));
+
+        LogicalOp verifSnowForcast = new LogicalOp();
+        System.out.println(verifSnowForcast.snowForcast(8));
+
+        LogicalOp rVerifyNumber = new LogicalOp();
+        System.out.println(rVerifyNumber.verificare(4));
+
+        LogicalOp rSwitchCase = new LogicalOp();
+        ;
+        System.out.println(rSwitchCase.switchCase1(6));
+
+        LogicalOp rIsNumberEven = new LogicalOp();
+        System.out.println(rIsNumberEven.isNumberEven(5));
+
+        LogicalOp rIsEligibleToVote = new LogicalOp();
+        System.out.println(rIsEligibleToVote.isEligibleToVote(19));
+
+        LogicalOp rCompareBiggerNumber = new LogicalOp();
+        System.out.println(rCompareBiggerNumber.compareBiggerNumber(9, 6, 7));
 
 
     }
-    static int opmain1(int no1,int no2,int no3){
-        int result;
-        result=no1+no2*no3;
-        return(result);
-    }
 
 
-    static int sum(int no1, int no2){
-        return (no1 + no2);
-    }
-
-    static int dec(int no1, int no2){
-        return (no1-no2);
-    }
-    static int mult(int no1, int no2){
-        return (no1*no2);
-    }
-    static float divide(float no1,float no2){
-        return(no1/no2);
-    }
-    static float multiple (float no1, float no2, float no3){
-        return(no1/no2/no3);
-    }
-
-    public void prinprintjava(String[]arg){
+    public void prinprintjava(String[] arg) {
 
         System.out.println("               J     a      v     v       a ");
         System.out.println("               J    a  a     v   v      a   a");
@@ -39,45 +79,16 @@ public class Lab2 {
         System.out.println("             JJ   a      a     V      a       a");
     }
 
-    static float arithmetic (float no1, float no2, float no3){
-        return (no1+no2+no3)/3;
-}
 
-    public void printface(String[]arg){
-        System.out.println(" +\"\"\"\"\"\"+"  + '\n'+"[|  O O |] " +'\n'+ " |   ^  | "  +'\n'+ " |  '_' | "  +'\n'+ "  +______+");
+    public void printface(String[] arg) {
+        System.out.println(" +\"\"\"\"\"\"+" + '\n' + "[|  O O |] " + '\n' + " |   ^  | " + '\n' + " |  '_' | " + '\n' + "  +______+");
     }
-
-    static int rest (int no1, int no2){
-        return(no1%no2);
 }
-    static float temperature(float farenheit) {
-        float celsius;
-        celsius=5/9f*(farenheit-32);
-        return (celsius);
-}
-    static float convertor(float inch){
-        float meters;
-        meters= inch /39.3701f;
-        return(meters);
-}
-    static float[] masina (float d, float h ,float m, float s){
-        float minutetosecond= 60f*m;
-        float hourtosecond= 3600f*h;
-        float speed=d/(minutetosecond+hourtosecond+s);
-        float speed2=speed*18/5;
-        float speed3=speed2*0.621371f ;
 
-        return new float[]{speed, speed2, speed3};
 
-        }
 
-        static int abcd (int y){
-         y= --y;
-         int x;
-         x=y;
-        return(x);
-        }
-}
+
+
 
 
 
