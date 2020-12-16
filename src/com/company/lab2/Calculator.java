@@ -1,7 +1,6 @@
 package com.company.lab2;
 
 public class Calculator {
-
     public int opMain1(int no1,int no2,int no3){
         int result;
         result=no1+no2*no3;
@@ -12,16 +11,16 @@ public class Calculator {
         return (no1 + no2);
     }
 
-     public int dec(int no1, int no2){
+    public int dec(int no1, int no2){
         return (no1-no2);
     }
     public int mult(int no1, int no2){
         return (no1*no2);
     }
-     public float divide(float no1,float no2){
+    public float divide(float no1,float no2){
         return(no1/no2);
     }
-     public float multiple (float no1, float no2, float no3){
+    public float multiple (float no1, float no2, float no3){
         return(no1/no2/no3);
     }
 
