@@ -38,9 +38,11 @@ public class LogicalOp {
     }
 
     public String verificare(int x) {
-        if (x > 3 && x == 4) {
+        if (x > 3 && !((x==4))) {
             String textshsh = "The number is greater than 3 and not equal to 4";
             return textshsh;
+        } else if (x==4){
+            return "The number is equal to 4";
         } else if (x < 3) {
             String text2 = "The number is lower than 3";
             return text2;
