@@ -8,7 +8,7 @@ public class Lab2 {
         System.out.println(calcOp1.opMain1(1, 2, 4));
 
         Calculator calcOp2 = new Calculator();
-        System.out.println(calcOp2.sum(2, 3));
+        System.out.println(calcOp1.sum(2, 3));
 
         Calculator calcOp3 = new Calculator();
         System.out.println(calcOp3.dec(4, 5));
