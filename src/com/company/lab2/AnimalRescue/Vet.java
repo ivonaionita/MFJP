@@ -5,13 +5,13 @@ public class Vet {
    private String specialty;
 
    public void setName(String name){
-       this.name="Ana Maria";
+       this.name=name;
    }
    public String getName(){
        return name;
    }
    public void setSpecialty(String specialty){
-       this.specialty="vet dr.";
+       this.specialty=specialty;
    }
    public String getSpecialty(){
        return specialty;

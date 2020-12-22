@@ -1,7 +1,5 @@
 package com.company.lab2.AnimalRescue;
 
-import java.sql.SQLOutput;
-
 public class AppMain {
     public static void main (String[]args)  {
 
@@ -16,8 +14,9 @@ public class AppMain {
         mydog.bark();
         mydog.sleep();
 
+
         Dog myotherdog=new Dog();
-        myotherdog.setName("abcd");
+        myotherdog.setName("ghhjh");
         System.out.println(myotherdog.getName());
 
 
@@ -28,11 +27,24 @@ public class AppMain {
         System.out.println(girlname.getName());
         System.out.println(girlname.getMoney());
 
-       Play favouriteplay=new Play();
+       DogPlay favouriteplay=new DogPlay();
         System.out.println(favouriteplay.getName());
 
         Vet missvet=new Vet();
         System.out.println(missvet.getName());
         System.out.println(missvet.getSpecialty());
+
+        Cat myCat= new Cat();
+        myCat.setName("simba");
+        System.out.println(myCat.getName());
+
+        Fish myFish=new Fish();
+        myFish.setName("nemo");
+        myFish.setAge(2);
+        System.out.println(myFish.getName());
+
+        Woman myWoman=new Woman();
+        myWoman.setMoney(2000);
+        System.out.println(myWoman.getMoney());
     }
 }
