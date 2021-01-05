@@ -12,9 +12,11 @@ public class Lab2 {
         //rPrint.countFromBiggerNumber(7,3);
         //rPrint.countFromNo(90);
         //rPrint.countUntillMinus100(-50);
-        rPrint.countFromBigger(2,4);
-
-
+        //rPrint.countFromBigger(2,4);
+        rPrint.printPattern(7);
+        //rPrint.printOddOneToHundred();
+        // rPrint.intervalDivideSeven(7,21);
+        //rPrint.fibonacci();
 
 
 
