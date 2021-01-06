@@ -1,5 +1,7 @@
 package com.company.lab2;
 
+import java.util.concurrent.locks.Condition;
+
 public class LogicalOp {
 
     public void prinprintjava(String[] arg) {
@@ -187,14 +189,6 @@ public class LogicalOp {
             }
         }
     }
-
-
-
-    //Creati o metoda in clasa LogicalOp, care sa primeste un numar ca si parametru.
-    // Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la 100,
-    // pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei, deoarece
-    // metoda afiseaza, nu returneaza.
-
     public void countFromNo(int i) {
         do {
             System.out.println(i);
@@ -294,11 +288,32 @@ public class LogicalOp {
       }
 
   }
-
-
-
-
-
+  public  void CozaLozaWoza() {
+        int i = 1;
+        while (i <= 110) {
+            boolean test = false;
+            if (i % 3 == 0) {
+                System.out.print("Coza");
+                test = true;
+            }
+            if (i % 5 == 0) {
+                System.out.print("Loza");
+                test = true;
+            }
+            if (i % 7 == 0) {
+                System.out.print("Woza");
+                test = true;
+            }
+            if (!test) {
+                System.out.print(i);
+            }
+            System.out.print(" ");
+            if (i % 11 == 0) {
+                System.out.println();
+            }
+            i++;
+        }
+    }
 }
 
 
