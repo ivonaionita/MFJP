@@ -11,6 +11,9 @@ public class Dog extends Animal {
         System.out.println("zzzzZZZZzzzzz");
     }
 
-
+    @Override
+    void languageKnown() {
+        System.out.print("Cutu Cutu");
+    }
 }
 

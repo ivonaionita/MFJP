@@ -9,4 +9,7 @@ public class Hobby {
     public String getName(){
         return name;
     }
+    void howFastYouCanRun(){
+        System.out.print("i run faster than you");
+    }
 }

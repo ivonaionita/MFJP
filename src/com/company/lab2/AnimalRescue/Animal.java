@@ -9,7 +9,9 @@ public class Animal {
     private String food;
     private String hobby ;
 
-
+    void languageKnown(){
+        System.out.println("Come to me");
+    }
 
     public void setName(String name){
 

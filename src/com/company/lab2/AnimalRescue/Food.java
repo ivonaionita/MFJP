@@ -6,6 +6,10 @@ public class Food {
     private double qty;
     private boolean stock;
 
+    void lovingFood (){
+        System.out.println("i love it");
+    }
+
     public void setName( String name){
         this.name=name;
     }
