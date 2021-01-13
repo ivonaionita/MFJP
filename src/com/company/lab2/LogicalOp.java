@@ -1,8 +1,6 @@
 package com.company.lab2;
 
-import java.util.concurrent.locks.Condition;
-
-public class LogicalOp {
+public class LogicalOp<copy> {
 
     public void prinprintjava(String[] arg) {
 
@@ -171,24 +169,25 @@ public class LogicalOp {
         float average = 0;
         for (float i = number; i <= 100; i++) {
             sum = sum + i;
-            average = sum / (100 - number + 1);
         }
+        average = sum / (100 - number + 1);
         System.out.println(average);
     }
 
     static void printPattern(int n) {
-        int line=0;
+        int line = 0;
         int star = 0;
-    for (line = 1; line<= n; line++) {
-        for (star = 8; star > line; star--) {
-           System.out.print("*");
+        for (line = 1; line <= n; line++) {
+            for (star = 8; star > line; star--) {
+                System.out.print("*");
             }
-        if (star == line) {
-             System.out.println("");
-             star = 0;
+            if (star == line) {
+                System.out.println("");
+                star = 0;
             }
         }
     }
+
     public void countFromNo(int i) {
         do {
             System.out.println(i);
@@ -258,63 +257,192 @@ public class LogicalOp {
 
     public void intervalDivideSeven(float x, float y) {
         float sum = 0;
-        int count=0;
-        float average =0;
+        int count = 0;
+        float average = 0;
         while (x <= y) {
-            if ( (x%7)==0){
-            sum = sum + x;
-            count++;
+            if ((x % 7) == 0) {
+                sum = sum + x;
+                count++;
             }
             x++;
-            average = sum /count;
-        } System.out.println(average);
+            average = sum / count;
+        }
+        System.out.println(average);
 
     }
 
-    public void fibonacci(){
-  int n1=0;
-  int n2=1;
-      System.out.println(n1);
-      System.out.println(n2);
-  int n3;
-  int count=20;
-  int n4=2;
-  while (n4<count) {
-      n3=n1+n2;
-      System.out.println(n3);
-      n1=n2;
-      n2=n3;
-      n4++;
-      }
+    public void fibonacci() {
+        int n1 = 0;
+        int n2 = 1;
+        System.out.println(n1);
+        System.out.println(n2);
+        int n3;
+        int count = 20;
+        int n4 = 2;
+        while (n4 < count) {
+            n3 = n1 + n2;
+            System.out.println(n3);
+            n1 = n2;
+            n2 = n3;
+            n4++;
+        }
 
-  }
-  public  void CozaLozaWoza() {
+    }
+
+    public void CozaLozaWoza() {
         int i = 1;
         while (i <= 110) {
-            boolean test = false;
-            if (i % 3 == 0) {
-                System.out.print("Coza");
-                test = true;
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                System.out.print("CozaLozaWoza ");
+            } else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.print("WozaLoza ");
+            } else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.print("CozaWoza ");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("CozaLoza ");
+            } else if (i % 7 == 0) {
+                System.out.print("Woza ");
+            } else if (i % 5 == 0) {
+                System.out.print("Loza ");
+            } else if (i % 3 == 0) {
+                System.out.print("Coza ");
+            } else {
+                System.out.print(i + " ");
             }
-            if (i % 5 == 0) {
-                System.out.print("Loza");
-                test = true;
-            }
-            if (i % 7 == 0) {
-                System.out.print("Woza");
-                test = true;
-            }
-            if (!test) {
-                System.out.print(i);
-            }
-            System.out.print(" ");
             if (i % 11 == 0) {
                 System.out.println();
             }
             i++;
         }
     }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    public void populateArrayWithValues(int[] array, int maxvalue) {
+        for (int i = 0; i < maxvalue; i++) {
+            array[i] = i + 1;
+        }
+    }
+
+    public int[] setValuesToArray(int maxValue) {
+        int[] array = new int[100];
+        for (int i = 0; i < maxValue; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    public int[] setConsecutiveValuesToArray(int minim, int maxValue) {
+        int[] array = new int[maxValue];
+        for (int i = minim - 1; i < maxValue; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    public int[] getEvenNumbersArray(int[] array) {
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                System.out.println(array[i]);
+            }
+        }
+        return array;
+    }
+
+
+    public double getAverageFromArray(double[] array) {
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i]; // sum +=myArray[i];
+
+        }
+        return sum / array.length;
+    }
+
+    public boolean isValueInArray(int[] array, int ceva) {
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == ceva)
+                return true;
+        }
+        return false;
+    }
+
+    public int isValueInArray2(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }return 0;
+
+    }
+
+    public String[] setArrayMinus(int max) {
+        String[] myArray = new String[max];
+        for (int i = 0; i < max; i++) {
+            myArray[i] = "-";
+        }
+        return myArray;
+    }
+
+    public void printMinus(String[] myArray) {
+        for (int i = 0; i <= 9; i++) {
+            System.out.print("-");
+        }
+    }
+
+    public void printMinus2(String[] myArray, int number) {
+
+        for (int i = 0; i <= 9; i++) {
+            printMinus(myArray);
+            System.out.println();
+
+        }
+    }
+
+    public void arrayWithoutValue(int[] args,int value) {
+       int[] array = {1, 2, 3, 4};
+       int[] secondArray = new int[array.length-1];
+       int j=0;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] != value){
+                secondArray[j++] = array[i];
+            }
+        }
+        printArray(secondArray);
+    }
+
+    public int secondSmallest(int[]array){
+        int smallest=Integer.MAX_VALUE;
+        int secondSmallest=Integer.MAX_VALUE;
+        for(int i=0; i<array.length; i++){
+            if (array[i]<smallest){
+                smallest=array[i];
+            }if (array[i]>smallest && array[i]<secondSmallest){
+                secondSmallest=array[i];
+            }
+        } return secondSmallest;
+
+    }
+
+    public void copyArray (int[] args){
+        int [] array={1,2,3,4};
+        int [] copy= new int[array.length];
+        for(int i=0; i<array.length;i++){
+            copy[i]=array[i];
+        }printArray(copy);
+    }
+
+
 }
+
+
+
 
 
 

@@ -1,31 +1,70 @@
 package com.company.lab2;
 
 public class Calculator {
-    public int opMain1(int no1,int no2,int no3){
-        int result;
-        result=no1+no2*no3;
-        return(result);
+    public int sum(int no1,int no2,int no3){
+        return(no1+no2+no3);
+    }
+
+    public float sum(float no1,float no2,float no3){
+        return(no1+no2+no3);
     }
 
     public int sum(int no1, int no2){
         return (no1 + no2);
     }
 
+    public float sum(float no1, float no2){
+        return (no1 + no2);
+    }
+
     public int dec(int no1, int no2){
         return (no1-no2);
     }
+
+    public int dec(int no1, int no2, int no3){
+        return (no1-no2-no3);
+    }
+
+    public double dec( double no1, double no2, double no3){
+        return (no1-no2-no3);
+    }
+    public float dec(float no1, float no2){
+        return (no1-no2);
+    }
+    public double dec(double no1, double no2){
+        return (no1-no2);
+    }
+
     public int mult(int no1, int no2){
         return (no1*no2);
     }
+
+    public float mult(float no1, float no2){
+        return (no1*no2);
+    }
+
+    public float mult(float no1, float no2, float no3 , float no4){
+        return (no1*no2*no3*no4);
+    }
+
     public float divide(float no1,float no2){
+        return(no1/no2);
+    }
+    public double divide(double no1,double no2){
         return(no1/no2);
     }
     public float multiple (float no1, float no2, float no3){
         return(no1/no2/no3);
     }
+    public float multiple (float no1, float no2, float no3, float no4, float no5){
+        return(no1/no2/no3/no4/no5);
+    }
 
     public float arithmetic (float no1, float no2, float no3){
         return (no1+no2+no3)/3;
+    }
+    public float arithmetic (float no1, float no2, float no3, float no4, float no5){
+        return (no1+no2+no3+no5+no5)/5;
     }
 
     public int rest (int no1, int no2){

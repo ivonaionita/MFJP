@@ -1,23 +1,29 @@
 package com.company.lab2;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Lab2 {
 
     public static void main(String[] args) {
 
 
-        LogicalOp rPrint= new LogicalOp();
-        //rPrint.printDecrease(7,4);
-        //rPrint.printNumberTo100(5);
-        //rPrint.printNumberToMinus100(2);
-        //rPrint.countFromBiggerNumber(7,3);
-        //rPrint.countFromNo(90);
-        //rPrint.countUntillMinus100(-50);
-        //rPrint.countFromBigger(2,4);
-        //rPrint.printPattern(7);
-        //rPrint.printOddOneToHundred();
-        // rPrint.intervalDivideSeven(7,21);
-        //rPrinct.fibonacci();
-        rPrint.CozaLozaWoza();
+        LogicalOp logic= new LogicalOp();
+        int [] myArray= logic.setValuesToArray(100);
+        logic.printArray(myArray);
+
+        String [] myArray2= logic.setArrayMinus(7);
+        logic.printMinus2(myArray2,6);
+        int [] sir={2,56,54,786};
+       /* logic.isValueInArray(sir,5);
+        System.out.println(logic.isValueInArray(sir,5));
+        logic.isValueInArray2(sir,5);
+        System.out.println(logic.isValueInArray2(sir,5));
+        logic.getEvenNumbersArray(myArray);
+        logic.secondSmallest(sir);
+        System.out.println(logic.secondSmallest(sir)); */
+        logic.arrayWithoutValue(sir,1);
+
 
 
 
