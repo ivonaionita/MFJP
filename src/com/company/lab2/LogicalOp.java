@@ -1,5 +1,7 @@
 package com.company.lab2;
 
+import java.util.List;
+
 public class LogicalOp<copy> {
 
     public void prinprintjava(String[] arg) {
@@ -436,6 +438,60 @@ public class LogicalOp<copy> {
         for(int i=0; i<array.length;i++){
             copy[i]=array[i];
         }printArray(copy);
+    }
+
+
+    public List <Integer> addNumber (List<Integer>mylist,int number) {
+        mylist.add(number);
+        return mylist;
+    }
+
+    public void printList(List<Integer>mylist){
+        for (int i =0; i<mylist.size();i++){
+            System.out.println(mylist.get(i));
+        }
+    }
+
+    public void fromNumber (List<Integer> myList,int x){
+        for(int i=x; i<myList.size();i++){
+            System.out.println(myList.get(i));
+
+        }
+    }
+
+    public void reverseNumbers (List<Integer> myList){
+        for(int i= myList.size()-1;i>=0;i--){
+            System.out.println(myList.get(i));
+        }
+
+    }
+
+    public List<String> addNameToList (List<String>myList, int number, String text){
+        myList.add(number,text);
+        return myList;
+    }
+
+    public List <Integer> addOnFirstPosition (List<Integer>mylist, int x){
+        mylist.add(0,x);
+        return mylist;
+    }
+
+    public void printList2(List<Integer>mylist){
+        int position=0;
+        for(int i=0; i<mylist.size();i++){
+            System.out.println("Pe pozitia "+position+" valoarea este "+ mylist.get(i));
+            position++;
+        }
+    }
+
+    public int biggestNumberFromList (List<Integer>mylist){
+        int maxim =mylist.get(0);
+        for (int i=0; i<mylist.size();i++){
+            if (mylist.get(i)>maxim){
+                maxim=mylist.get(i);
+
+            }
+        } return maxim;
     }
 
 
