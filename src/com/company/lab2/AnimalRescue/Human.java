@@ -1,13 +1,10 @@
 package com.company.lab2.AnimalRescue;
 
-public class Human {
+ public abstract class Human {
     private String name;
     private double money;
     private String nationality;
 
-    public void whereAreyouFrom(){
-        System.out.print("i'm from Romania");
-    }
 
     public void setName(String name){
         this.name=name;
@@ -30,6 +27,9 @@ public class Human {
     public String getNationality() {
         return nationality;
     }
+
+    public abstract void sayHello();
+
 
 }
 

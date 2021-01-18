@@ -1,10 +1,14 @@
 package com.company.lab2.AnimalRescue;
 
-public class Cat extends Animal {
+public abstract class Cat extends Animal {
+        public  void purr(){
+                System.out.println("purrrrrr");
+        }
 
-    void purr(){
-        System.out.println("purrRRRRRrrrr");
-    }
-
-
+        @Override
+        public void respondTo() {
+                System.out.println("hey kitty kitty");
+        }
+        public abstract void catSleepHours();
 }
+

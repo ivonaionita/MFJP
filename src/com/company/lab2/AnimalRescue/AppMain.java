@@ -3,7 +3,7 @@ package com.company.lab2.AnimalRescue;
 public class AppMain {
     public static void main (String[]args)  {
 
-        Dog mydog=new Dog();
+        /*(Dog mydog=new Pug();
         System.out.println(mydog.getName());
         System.out.println(mydog.getAge());
         System.out.println(mydog.getFood());
@@ -45,6 +45,10 @@ public class AppMain {
 
         Woman myWoman=new Woman();
         myWoman.setMoney(2000);
-        System.out.println(myWoman.getMoney());
+        System.out.println(myWoman.getMoney());*/
+
+        Woman myWoman=new Woman();
+        myWoman.setName("dana");
+        System.out.println(myWoman.getName());
     }
 }

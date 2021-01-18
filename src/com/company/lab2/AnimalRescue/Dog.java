@@ -1,18 +1,13 @@
 package com.company.lab2.AnimalRescue;
 
-public class Dog extends Animal {
+public abstract class Dog extends Animal {
 
 
-    void bark(){
-        System.out.println("Ham");
-    }
+     abstract void  bark();
 
-    void sleep(){
-        System.out.println("zzzzZZZZzzzzz");
-    }
+    abstract void sleep();
 
-    @Override
-    void languageKnown() {
+    public void respondTo() {
         System.out.print("Cutu Cutu");
     }
 }

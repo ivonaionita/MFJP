@@ -1,6 +1,6 @@
 package com.company.lab2.AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
     private String  name;
     private int age;
     private int health;
@@ -9,9 +9,7 @@ public class Animal {
     private String food;
     private String hobby ;
 
-    void languageKnown(){
-        System.out.println("Come to me");
-    }
+    public abstract void respondTo();
 
     public void setName(String name){
 
