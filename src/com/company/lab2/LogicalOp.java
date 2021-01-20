@@ -380,7 +380,8 @@ public class LogicalOp<copy> {
             if (array[i] == value) {
                 return i;
             }
-        }return 0;
+        }
+        return 0;
 
     }
 
@@ -407,95 +408,121 @@ public class LogicalOp<copy> {
         }
     }
 
-    public void arrayWithoutValue(int[] args,int value) {
-       int[] array = {1, 2, 3, 4};
-       int[] secondArray = new int[array.length-1];
-       int j=0;
+    public void arrayWithoutValue(int[] args, int value) {
+        int[] array = {1, 2, 3, 4};
+        int[] secondArray = new int[array.length - 1];
+        int j = 0;
         for (int i = 0; i < array.length; i++) {
-            if(array[i] != value){
+            if (array[i] != value) {
                 secondArray[j++] = array[i];
             }
         }
         printArray(secondArray);
     }
 
-    public int secondSmallest(int[]array){
-        int smallest=Integer.MAX_VALUE;
-        int secondSmallest=Integer.MAX_VALUE;
-        for(int i=0; i<array.length; i++){
-            if (array[i]<smallest){
-                smallest=array[i];
-            }if (array[i]>smallest && array[i]<secondSmallest){
-                secondSmallest=array[i];
+    public int secondSmallest(int[] array) {
+        int smallest = Integer.MAX_VALUE;
+        int secondSmallest = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < smallest) {
+                smallest = array[i];
             }
-        } return secondSmallest;
+            if (array[i] > smallest && array[i] < secondSmallest) {
+                secondSmallest = array[i];
+            }
+        }
+        return secondSmallest;
 
     }
 
-    public void copyArray (int[] args){
-        int [] array={1,2,3,4};
-        int [] copy= new int[array.length];
-        for(int i=0; i<array.length;i++){
-            copy[i]=array[i];
-        }printArray(copy);
+    public void copyArray(int[] args) {
+        int[] array = {1, 2, 3, 4};
+        int[] copy = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            copy[i] = array[i];
+        }
+        printArray(copy);
     }
 
 
-    public List <Integer> addNumber (List<Integer>mylist,int number) {
+    public List<Integer> addNumber(List<Integer> mylist, int number) {
         mylist.add(number);
         return mylist;
     }
 
-    public void printList(List<Integer>mylist){
-        for (int i =0; i<mylist.size();i++){
+    public void printList(List<Integer> mylist) {
+        for (int i = 0; i < mylist.size(); i++) {
             System.out.println(mylist.get(i));
         }
     }
 
-    public void fromNumber (List<Integer> myList,int x){
-        for(int i=x; i<myList.size();i++){
+    public void fromNumber(List<Integer> myList, int x) {
+        for (int i = x; i < myList.size(); i++) {
             System.out.println(myList.get(i));
 
         }
     }
 
-    public void reverseNumbers (List<Integer> myList){
-        for(int i= myList.size()-1;i>=0;i--){
+    public void reverseNumbers(List<Integer> myList) {
+        for (int i = myList.size() - 1; i >= 0; i--) {
             System.out.println(myList.get(i));
         }
 
     }
 
-    public List<String> addNameToList (List<String>myList, int number, String text){
-        myList.add(number,text);
+    public List<String> addNameToList(List<String> myList, int number, String text) {
+        myList.add(number, text);
         return myList;
     }
 
-    public List <Integer> addOnFirstPosition (List<Integer>mylist, int x){
-        mylist.add(0,x);
+    public List<Integer> addOnFirstPosition(List<Integer> mylist, int x) {
+        mylist.add(0, x);
         return mylist;
     }
 
-    public void printList2(List<Integer>mylist){
-        int position=0;
-        for(int i=0; i<mylist.size();i++){
-            System.out.println("Pe pozitia "+position+" valoarea este "+ mylist.get(i));
+    public void printList2(List<Integer> mylist) {
+        int position = 0;
+        for (int i = 0; i < mylist.size(); i++) {
+            System.out.println("Pe pozitia " + position + " valoarea este " + mylist.get(i));
             position++;
         }
     }
 
-    public int biggestNumberFromList (List<Integer>mylist){
-        int maxim =mylist.get(0);
-        for (int i=0; i<mylist.size();i++){
-            if (mylist.get(i)>maxim){
-                maxim=mylist.get(i);
+    public int biggestNumberFromList(List<Integer> mylist) {
+        int maxim = mylist.get(0);
+        for (int i = 0; i < mylist.size(); i++) {
+            if (mylist.get(i) > maxim) {
+                maxim = mylist.get(i);
 
             }
-        } return maxim;
+        }
+        return maxim;
+    }
+
+    public void printValueFromArrayTC(int[] array, int i) {
+        array = new int[]{1000, 22, 34, 4};
+
+        try {
+            System.out.println(array[i]);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Inside catch, number too large");
+        }
+    }
+
+    public void wait(int time) {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
     }
 
 
 }
+
+
+
 
 
 

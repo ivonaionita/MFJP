@@ -7,14 +7,14 @@ import java.util.List;
 
 public class Lab2 {
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
 
         LogicalOp logic= new LogicalOp();
-    /*    int [] myArray= logic.setValuesToArray(100);
-        logic.printArray(myArray);
+       //int [] myArray= logic.setValuesToArray(100);
+        //logic.printArray(myArray);
 
-        String [] myArray2= logic.setArrayMinus(7);
+       /* String [] myArray2= logic.setArrayMinus(7);
         logic.printMinus2(myArray2,6);
         int [] sir={2,56,54,786};
        /* logic.isValueInArray(sir,5);
@@ -27,10 +27,10 @@ public class Lab2 {
       //  logic.arrayWithoutValue(sir,1);
 
         List<Integer> mylist= new ArrayList();
-        mylist.add(1);
-        mylist.add(7);
-        mylist.add(100);
-        mylist.add(0);
+         mylist.add(1);
+       //  mylist.add(7);
+       //  mylist.add(100);
+       //  mylist.add(0);
        // logic.printList(mylist);
        // System.out.println(logic.addNumber(mylist,4));
        // logic.fromNumber(mylist,1);
@@ -40,11 +40,22 @@ public class Lab2 {
        // mySecondList.add("Ana");
        // mySecondList.add("Maria");
        // mySecondList.add("Ioana");
+       //int[]  myArray={1,2,3,4};
+        //ReadFromKeyboard read=new ReadFromKeyboard();
+        //int myInt= read.readInt();
+       // System.out.println(myArray[myInt]);
 
-       // System.out.println(logic.addNameToList(mySecondList,1,"Dana"));
-       //  System.out.println(logic.addOnFirstPosition(mylist,24));
-       // logic.printList2(mylist);
-        System.out.println(logic.biggestNumberFromList(mylist));
+       // float [] myArray2={10.5f};
+       // float myFloat=read.readFloat();
+       // System.out.println(myArray[(int) myFloat]);
+
+        ReadFromKeyboard result= new ReadFromKeyboard();
+        int[] array=result.arrayFromTast(4);
+        System.out.println(Arrays.toString(array));
+        int [] array2={11,22,312};
+        logic.printValueFromArrayTC(array2,1000);
+        logic.wait(2);
+        System.out.println(result.listFromTast(mylist));
 
     }
 }
