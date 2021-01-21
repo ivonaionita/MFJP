@@ -63,5 +63,5 @@ public class Main {
             result=no1 + no2 / no3 * no4 - no5 % no6;
             return(result);
        }
-}
+
 
