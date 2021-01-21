@@ -510,7 +510,7 @@ public class LogicalOp<copy> {
 
     public void wait(int time) {
         try {
-            Thread.sleep(time*1000);
+            Thread.sleep(time * 1000);
         } catch (InterruptedException e) {
             System.out.println("ERROR");
         }
