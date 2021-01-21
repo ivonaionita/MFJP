@@ -50,7 +50,7 @@ public static void main(String[] args) {
        // System.out.println(myArray[(int) myFloat]);
 
         ReadFromKeyboard result= new ReadFromKeyboard();
-        int[] array=result.arrayFromTast(4);
+        int[] array=result.arrayFromTast(1);
         System.out.println(Arrays.toString(array));
         int [] array2={11,22,312};
         logic.printValueFromArrayTC(array2,1000);

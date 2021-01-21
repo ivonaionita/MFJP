@@ -501,7 +501,6 @@ public class LogicalOp<copy> {
 
     public void printValueFromArrayTC(int[] array, int i) {
         array = new int[]{1000, 22, 34, 4};
-
         try {
             System.out.println(array[i]);
         } catch (IndexOutOfBoundsException e) {
@@ -511,9 +510,9 @@ public class LogicalOp<copy> {
 
     public void wait(int time) {
         try {
-            Thread.sleep(5000);
+            Thread.sleep(time*1000);
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            System.out.println("ERROR");
         }
 
     }
